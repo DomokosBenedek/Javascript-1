@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        .grid-container {
+          display: grid;
+          width: 400px;
+          grid-template-columns:auto, auto, auto, auto, auto;
+          background-color: white;
+          padding: 10px;
+          margin: 0 auto;
+        }
+        .grid-item {
+          background-color:white;
+          border: none;
+          padding: 20px;
+          text-align: center;
+        }
+        .item1 {
+        padding: 0px;
+        grid-row: 1;
+        grid-column: 3/4;
+        width: 100px;
+        height: 98px;
+        background-image: url("Kepek/kek.png");
+        }
+        .item2 {
+        padding: auto;
+        grid-row: 1;
+        grid-column: 4/5;
+        width: 100px;
+        height: 98px;
+        background-image: url("Kepek/kek.png");
+        }
+        .item3 {
+        padding: auto;
+        grid-row: 2;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        }
+        .item4 {
+        padding: auto;
+        grid-row: 2;
+        grid-column: 3/4;
+        width: 100px;
+        height: 100px;
+        background-image: url("Kepek/szurke.png");
+        }
+        .item5 {
+        padding: auto;
+        grid-row: 2;
+        grid-column: 4/5;
+        width: 100px;
+        height: 98px;
+        background-image: url("Kepek/kek.png");
+        }
+        .item6 {
+        grid-row: 3;
+        grid-column:1/5;
+        text-align: center;
+        padding:0px;
+        width: 100px;
+        height: 30px;
+        }
+        .item7 {
+        padding: auto;
+        grid-row: 4;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        }
+        .item8 {
+        padding: auto;
+        grid-row: 4;
+        grid-column: 2/3;
+        width: 100px;
+        height: 100px;
+        background-image: url("Kepek/piros.png");
+        }
+        .item9 {
+        padding: auto;
+        grid-row: 4;
+        grid-column: 3/4;
+        width: 100px;
+        height: 100px;
+        background-image: url("Kepek/szurke.png");
+        }
+        .item10 {
+        padding: auto;
+        grid-row: 4;
+        grid-column: 4/5;
+        width: 100px;
+        height: 100px;
+        background-image: url("Kepek/szurke.png");
+        }
+        #cim{
+            text-align: center;
+        }
+        #alap{
+            width: 600px;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            font-size: 500%;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+<div id="alap">
+    <h1 id="cim">Gyakorló feladat. Matematikai vűveletek.</h1>
+    
+    <div class="grid-container">
+        <div class="item1"><h2 id="a"></h2></div>
+        <div class="item2"><h2 id="á"></h2></div>
+        <div class="item3"><img src="Kepek/pluszjel.png" alt="pluszjel"></div>  
+        <div class="item4"><h2 id="e"></h2></div>
+        <div class="item5"><h2 id="ä"></h2></div>
+        <div class="item6"><img src="Kepek/vonal.png" alt="vonal" width="400px"></div>
+        <div class="item7"><img src="Kepek/egyenlo.png" alt="egyenlo"></div>  
+        <div class="item8"><h2 id="i"></h2></div>
+        <div class="item9"><h2 id="é"></h2></div>
+        <div class="item10"><h2 id="€"></h2></div>  
+      </div>
+      <br>
+      <button onclick="Alap()">Alap</button>
+      <button onclick="Megoldas()">Megoldás</button>
+      <br>
+      <p>Megoldás = <a id="demo"></a></p>
+    </div>
+<script>
+    function Megoldas() {
+        document.getElementById("demo").innerHTML = "100";
+        document.getElementById("a").innerText  = "9";
+        document.getElementById("á").innerText  = "9";
+        document.getElementById("ä").innerText  = "9";
+        document.getElementById("i").innerText  = "1";
+        document.getElementById("e").innerText  = "8";
+        document.getElementById("é").innerText  = "8";
+        document.getElementById("€").innerText  = "8";
+    }
+    function Alap() {
+        document.getElementById("demo").innerHTML = "";
+        document.getElementById("a").innerText  = "";
+        document.getElementById("á").innerText  = "";
+        document.getElementById("ä").innerText  = "";
+        document.getElementById("i").innerText  = "";
+        document.getElementById("e").innerText  = "";
+        document.getElementById("é").innerText  = "";
+        document.getElementById("€").innerText  = "";
+    }
+</script>
+
+</body>
+</html>
