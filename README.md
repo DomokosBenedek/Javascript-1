@@ -1,6 +1,4 @@
-  kék9 kék9
-+ piros8 kék9
-= szürke1 piros8 piros8
+  kék9 kék9 (99)+ piros8 kék9 (89)= szürke1 piros8 piros8(188)
 
 99+89=188
 9+9=18 Leírom a 8-at tovább viszem az 1-et.
